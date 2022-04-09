@@ -5,177 +5,349 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wikipedia</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
   </head>
 
   <body>
-    <div id="mw-head"></div>
-
-    <div id="mw-panel">
-      <div id="p-logo">
-        <a
-          class="mw-wiki-logo"
-          href="https://en.wikipedia.org/wiki/Main_Page"
-          title="Visit the main page"
-          ><img
-          src="https://en.wikipedia.org/static/images/project-logos/enwiki.png"
-          alt="wiki img"
-        </a>
+    <section class="row d-flex text-black text-left justify-content-between" >
+       <!-- Side Bar -->
+      <div class="container col-2" id="side-section">  
+        <!-- LOGO -->
+        <div class="d-flex align-items-center justify-content-center" id="p-logo">
+            <a
+              class="mw-wiki-logo"
+              href="https://en.wikipedia.org/wiki/Main_Page"
+              title="Visit the main page"
+              ><img
+                src="https://en.wikipedia.org/static/images/project-logos/enwiki.png"
+              />
+            </a>
+        </div>
+       
+          <aside class="menu p-3 align-items-center" id="side-bar">
+            <ul class="menu-list">
+              <li><a class="text-decoration-none" href="#">Main page</a></li>
+              <li><a class="text-decoration-none" href="#">contents</a></li>
+              <li><a class="text-decoration-none" href="#">current events</a></li>
+              <li><a class="text-decoration-none" href="#">Random article</a></li>
+              <li><a class="text-decoration-none" href="#">About Wikipedia</a></li>
+              <li><a class="text-decoration-none" href="#">Contact us</a></li>
+              <li><a class="text-decoration-none" href="#">Donate</a></li>
+            </ul>
+            <ul class="menu-list">
+              <li>Contribute</li>
+              <hr class="m-0 w-75" />
+              <li><a class="text-decoration-none" href="#">Help</a></li>
+              <li><a class="text-decoration-none" href="#">Learn to edit</a></li>
+              <li><a class="text-decoration-none" href="#">Community portal</a></li>
+              <li><a class="text-decoration-none" href="#">Recent changes</a></li>
+              <li><a class="text-decoration-none" href="#">Upload file
+              </a></li>
+            </ul>
+            <ul class="menu-list">
+              <li>Tools</li>
+              <hr class="m-0 w-75" />
+             <li><a class="text-decoration-none" href="#">What links here</a></li>
+              <li><a class="text-decoration-none" href="#">Related changes</a></li>
+              <li><a class="text-decoration-none" href="#">Special pages</a></li>
+              <li><a class="text-decoration-none" href="#">Permanent link</a></li>
+              <li><a class="text-decoration-none" href="#">Page information</a></li>
+              <li><a class="text-decoration-none" href="#">Cite this page</a></li>
+              <li><a class="text-decoration-none" href="#">Wikidata item</a></li>
+            </ul>
+            <ul class="menu-list">
+              <li>Print/export
+              </li>
+              <hr class="m-0 w-75" />
+              <li class=""><a href="">contents</a></li>
+              <li><a class="text-decoration-none" href="#">Download as PDF</a></li>
+              <li><a class="text-decoration-none" href="#">Printable version</a></li>
+                     </ul>
+            <ul class="menu-list">
+              <li>In other projects</a></li>
+              <hr class="m-0 w-75" />
+              <li><a class="text-decoration-none" href="#">Wikimedia Commons</a></li>
+              <li><a class="text-decoration-none" href="#">Wikibooks</a></li>
+              <li><a class="text-decoration-none" href="#">Wikiquote</a></li>
+            </ul>
+            <ul class="menu-list">
+              <li>Languages</a></li>
+              <hr class="m-0 w-75" />
+              <li><a class="text-decoration-none" href="#">አማርኛ</a></li>
+              <li><a class="text-decoration-none" href="#">العربية</a></li>
+              <li><a class="text-decoration-none" href="#">עברית</a></li>
+              <li><a class="text-decoration-none" href="#">Ladino</a></li>
+              <li><a class="text-decoration-none" href="#">മലയാളം</a></li>
+              <li><a class="text-decoration-none" href="#">Polski</a></li>
+              <li><a class="text-decoration-none" href="#">Română</a></li>
+              <li><a class="text-decoration-none" href="#">Русский</a></li>
+              <li><a class="text-decoration-none" href="#">ייִדיש</a></li>
+              <button class="btn btn-item text-dark border p-1 mb-0 fw-lighter">
+                <img
+                  src="https://en.wikipedia.org/w/extensions/UniversalLanguageSelector/resources/images/language-base20.svg?b7954"
+                />
+                168 more
+              </button>
+            </ul>
+            <sub class="d-flex justify-content-end"><a class="text-decoration-none" href="#" style="list-style: none;"> Edit links </a></span>
+          </aside>
       </div>
-      <aside class="menu">
-        <p class="menu-label">Main page</p>
-        <ul class="menu-list">
-          <li><a href="">contents</a></li>
-          <li><a href="">current events</a></li>
-          <li><a href="">Random article</a></li>
-          <li><a href="">Contact us</a></li>
-          <li><a href="">Donate</a></li>
-        </ul>
-        <p class="menu-label">Contribute</p>
-        <ul class="menu-list">
-          <li><a href="">Help</a></li>
-          <li><a href="">Learn to edit</a></li>
-          <li><a href="">Community portal</a></li>
-          <li><a href="">Recent changes</a></li>
-          <li><a href="">Upload file</a></li>
-        </ul>
-        <p class="menu-label">Tools</p>
-        <ul class="menu-list">
-          <li><a href="">What links here </a></li>
-          <li><a href="">Related changes</a></li>
-          <li><a href="">Special pages</a></li>
-          <li><a href="">Permanent link</a></li>
-          <li><a href="">Page information</a></li>
-          <li><a>Wikidata item</a></li>
-        </ul>
-      </aside>
-    </div>
 
-    <div id="content" class="mw-body">
-      <section>
+    <!-- Main -->
+      <div class="container col-10 text-dark" style="border: 1px solid #a7d7f9; height:auto;">
+
+    <!-- Head navbar -->
+    <!--  -->
+
+
+
         <h1 id="first-heading">Apple</h1>
-        <p>
-          An apple is an edible fruit produced by an apple tree (Malus
-          domestica). Apple trees are cultivated worldwide and are the most
+       <div class="row">
+         <div class="col-8">
+        <p>From Wikipedia, the free encyclopedia </p>
+          <p class="p-2 m-3">
+          <i>This article is about the fruit and tree. For the American technology company, see Apple Inc. For other uses, see Apple (disambiguation).
+            "Apple tree" redirects here. For other uses, see Apple tree (disambiguation).</i></p>
+          <p>
+          An <b> apple</b> is an edible fruit produced by an <b> apple tree (Malus
+          domestica) </b>. Apple trees are cultivated worldwide and are the most
           widely grown species in the genus Malus. The tree originated in
           Central Asia, where its wild ancestor, Malus sieversii, is still found
           today. Apples have been grown for thousands of years in Asia and
           Europe and were brought to North America by European colonists. Apples
           have religious and mythological significance in many cultures,
-          including Norse, Greek, and European Christian tradition. Apples grown
+          including Norse, Greek, and European Christian tradition.</p>
+          
+          <p> grown
           from seed tend to be very different from those of their parents, and
           the resultant fruit frequently lacks desired characteristics.
           Generally, apple cultivars are propagated by clonal grafting onto
           rootstocks. Apple trees grown without rootstocks tend to be larger and
           much slower to fruit after planting. Rootstocks are used to control
           the speed of growth and the size of the resulting tree, allowing for
-          easier harvesting. There are more than 7,500 known cultivars of
+          easier harvesting.
+          </p>
+          <p>There are more than 7,500 known cultivars of
           apples. Different cultivars are bred for various tastes and uses,
           including cooking, eating raw, and cider production. Trees and fruit
           are prone to a number of fungal, bacterial, and pest problems, which
           can be controlled by a number of organic and non-organic means. In
           2010, the fruit's genome was sequenced as part of research on disease
-          control and selective breeding in apple production. Worldwide
+          control and selective breeding in apple production.</p> 
+          Worldwide
           production of apples in 2018 was 86 million tonnes, with China
-          accounting for nearly half of the total.[3]
+          accounting for nearly half of the total.<sup>[3]</sup>
         </p>
-        <img
-          id="first-apple"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pink_lady_and_cross_section.jpg/330px-Pink_lady_and_cross_section.jpg"
-          alt="apple"
-        />
-
-        <div class="contents">
-          <h3 class="h3-contents">
-            Contents <span class="toctogglelabel">[hide]</span>
-          </h3>
-          <ol class="header-ol-lists">
+        <div class="contents mb-3" style="width: fit-content;">
+          <h6 class="h3-contents m-0">
+            Contents [<a style="color: #0645ad" href="#">hide</a>]
+          </h6>
+          <ol class="m-0 p-2" id="special-list" style="color: #0645AD">
             <li>Etymology</li>
-            <li>
-              Description
+            <li>Description
               <ol>
                 <li>Wild ancestors</li>
                 <li>Genome</li>
               </ol>
             </li>
             <li>History</li>
-          </ol>
+            <li>Significance in European cultures and societies
+              <ol>
+                <li>Germanic paganism</li>
+                <li>Greek mythology</li>
+                <li>Christian art</li>
+                <li>Proverb</li>
+              </ol>
+            </li>
+            <li>Cultivars</li>
+            <li>Cultivation
+              <ol>
+                <li>Breeding</li>
+                <li>Pollination</li>
+                <li>Maturation and harvest</li>
+                <li>Storage</li>
+                <li>Pests and diseases</li>
+              </ol>
+            </li>
+            <li>Production</li>
+            <li>Nutrition</li>
+            <li>Uses
+              <ol>
+                <li>Popular uses</li>
+                <li>Organic production</li>
+                <li>Phytochemicals</li>
+                <li>Non-browning apples</li>
+                <li>Other products</li>
+                <li>Research</li>
+                <li>Allergy</li>
+                <li>Toxicity of seeds</li>
+              </ol>
+            </li>
+            <li>See also</li>
+            <li>References</li>
+            <li>Further reading</li>
+            <li>External links</li>
         </div>
-      </section>
+      </div>
+      
+        <div class="col-2" style="padding-top: 100px;">
+        <div class="d-flex m-0 p-0 d-flex card align-items-center p-1" style="display: none; width: 16rem; background-color: #ffffff;">
+          <div class="card border-0" style="width: 15rem">
+            <p style="background-color: rgb(180,250,180); text-align: center;"><b>Apple</b></p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pink_lady_and_cross_section.jpg/330px-Pink_lady_and_cross_section.jpg" class="card-img-top">
+       
+        <p style="text-align: center; display: block;"><a href="#">'Cripps Pink'</a> apples</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Malus_domestica_a1.jpg/220px-Malus_domestica_a1.jpg" class="card-img-top">
+          <p style="background-color: rgb(180,250,180); text-align: center;"><a href="#"><b>Scientific classification</b></a></p>
+          <p style="text-align: center; display: block;">Flowers</p>
+        <table>
+          <tr>
+            <td>Kingdom:</td>
+            <td>	Plantae</td>
+          </tr>
+          <tr>
+            <td>Clade:</td>
+            <td>	Tracheophytes</td>
+          </tr>
+          <tr>
+            <td>Clade:</td>
+            <td>	Angiosperms</td>
+          </tr>
+          <tr>
+            <td>Clade:</td>
+            <td>Eudicots</td>
+          </tr>
+          <tr>
+            <td>Clade:</td>
+            <td>	Rosids</td>
+          </tr>
+          <tr>
+            <td>Order:</td>
+            <td>	Rosales</td>
+          </tr>
+          <tr>
+            <td>Family:</td>
+            <td>	Rosaceae</td>
+          <tr>
+            <td>Genus:</td>
+            <td>		Malus</td>
+          </tr>
+          <tr>
+            <td>Species:</td>
+            <td>		<b>M. domestica</b></td>
+          </tr>
+        </table>
+        <p class="m-0" style="background-color: rgb(180,250,180); text-align: center;"><a href="#"><b>Binomial name</b></a></p>
+        <p class="m-0 p-0" style="text-align: center;"><b>Malus domestica</b> <br>
+        <sub class="m-0 p-0"><a href="#">Borkh</a>, 1803</sub>
+        </p>
+        <p class="m-0" style="background-color: rgb(180,250,180); text-align: center;"><a href="#"><b>Synonyms</b> <sup>[1][2]</sup></a></p>
+        <ul>
+          <li><i>Malus communis Desf.</i></li>
+          <li><i>M. frutescens Medik.</i></li>
+          <li><i>M. paradisiaca (L.) Medikus</i></li>
+          <li><i>M. sylvestris Mil.</i></li>
+          <li><i>Pyrus malus L.</i></li>
+          <li><i>Pyrus malus var. paradisiaca L.</i></li>
+          <li><i>Pyrus dioica Moench</i></li>
+        </ul>
+        </div>
+      </div>
+      </div>
+      </div>
 
-      <section>
-        <h2 id="second-heading">Etymology</h2>
+      <div>
+        <h3 id="second-heading">Etymology</h3>
         <p>
           The word apple, formerly spelled æppel in Old English, is derived from
           the Proto-Germanic root *ap(a)laz, which could also mean fruit in
           general. This is ultimately derived from Proto-Indo-European *ab(e)l-,
           but the precise original meaning and the relationship between both
-          words[clarification needed] is uncertain. As late as the 17th century,
+          words[clarification needed] is uncertain.</p>
+          As late as the 17th century,
           the word also functioned as a generic term for all fruit other than
           berries but including nuts—such as the 14th century Middle English
           word appel of paradis, meaning a banana.[4] This use is analogous to
           the French language use of pomme.
         </p>
-      </section>
+      </div>
+  
+      <div>
+        <h3 class="m-0 p-0" id="third-heading">Description</h3>
+          <div class="row">
+            <div class="col">
+              <p>
+                The apple is a deciduous tree, generally standing 2 to 4.5 m (6 to 15
+                ft) tall in cultivation and up to 9 m (30 ft) in the wild. When
+                cultivated, the size, shape and branch density are determined by
+                rootstock selection and trimming method. The leaves are alternately
+                arranged dark green-colored simple ovals with serrated margins and
+                slightly downy undersides.[5]</p>
+                <p>Apple blossom Blossoms are produced in
+                spring simultaneously with the budding of the leaves and are produced
+                on spurs and some long shoots. The 3 to 4 cm (1 to 1+1⁄2 in) flowers
+                are white with a pink tinge that gradually fades, five petaled, with
+                an inflorescence consisting of a cyme with 4–6 flowers. The central
+                flower of the inflorescence is called the "king bloom"; it opens first
+                and can develop a larger fruit.[5][6]</p>
+                The fruit is a pome that matures
+                in late summer or autumn, and cultivars exist in a wide range of
+                sizes. Commercial growers aim to produce an apple that is 7 to 8.5 cm
+                (2+3⁄4 to 3+1⁄4 in) in diameter, due to market preference. Some
+                consumers, especially those in Japan, prefer a larger apple, while
+                apples below 5.5 cm (2+1⁄4 in) are generally used for making juice and
+                have little fresh market value. The skin of ripe apples is generally
+                red, yellow, green, pink, or russetted, though many bi- or tri-colored
+                cultivars may be found.[7] The skin may also be wholly or partly
+                russeted i.e. rough and brown. The skin is covered in a protective
+                layer of epicuticular wax.[8] The exocarp (flesh) is generally pale
+                yellowish-white,[7] though pink, yellow or green exocarps also
+                occur.[9]
+              </p>
+            </div>
+              
+              <div class="col-3 card align-items-center align-self-end p-1" style="width: 14rem; background-color: #ffffff;">
+                <div class="card" style="width: 13rem; border: 1px solid #c8ccd1;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Malus_domestica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-108.jpg/330px-Malus_domestica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-108.jpg"" class="card-img-top">
+              </div>
+                <div class="card-body m-1 p-0">
+                  <p class="card-text m-1 p-0">Blossoms, fruits, and leaves of the apple tree (Malus domestica)</p>
+                </div>
+              </div>
+            </div>
 
-      <section>
-        <h2 id="third-heading">Description</h2>
-        <img
-          id="second-apple"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Malus_domestica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-108.jpg/330px-Malus_domestica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-108.jpg"
-          alt="second"
-        />
-        <p>
-          The apple is a deciduous tree, generally standing 2 to 4.5 m (6 to 15
-          ft) tall in cultivation and up to 9 m (30 ft) in the wild. When
-          cultivated, the size, shape and branch density are determined by
-          rootstock selection and trimming method. The leaves are alternately
-          arranged dark green-colored simple ovals with serrated margins and
-          slightly downy undersides.[5] Apple blossom Blossoms are produced in
-          spring simultaneously with the budding of the leaves and are produced
-          on spurs and some long shoots. The 3 to 4 cm (1 to 1+1⁄2 in) flowers
-          are white with a pink tinge that gradually fades, five petaled, with
-          an inflorescence consisting of a cyme with 4–6 flowers. The central
-          flower of the inflorescence is called the "king bloom"; it opens first
-          and can develop a larger fruit.[5][6] The fruit is a pome that matures
-          in late summer or autumn, and cultivars exist in a wide range of
-          sizes. Commercial growers aim to produce an apple that is 7 to 8.5 cm
-          (2+3⁄4 to 3+1⁄4 in) in diameter, due to market preference. Some
-          consumers, especially those in Japan, prefer a larger apple, while
-          apples below 5.5 cm (2+1⁄4 in) are generally used for making juice and
-          have little fresh market value. The skin of ripe apples is generally
-          red, yellow, green, pink, or russetted, though many bi- or tri-colored
-          cultivars may be found.[7] The skin may also be wholly or partly
-          russeted i.e. rough and brown. The skin is covered in a protective
-          layer of epicuticular wax.[8] The exocarp (flesh) is generally pale
-          yellowish-white,[7] though pink, yellow or green exocarps also
-          occur.[9]
-        </p>
+            <h6 class="mb-2"><b>Wild ancestors</b></h6>
+            <div class="row">
+              <div class="col">
+                <i class="p-3" >Main article: Malus sieversii</i>
 
-        <section>
-          <h3>Wild ancestors</h3>
+                <p>
+                  The original wild ancestor of Malus domestica was Malus sieversii,
+                  found growing wild in the mountains of Central Asia in southern
+                  Kazakhstan, Kyrgyzstan, Tajikistan, and northwestern China.[5][10]
+                  Cultivation of the species, most likely beginning on the forested
+                  flanks of the Tian Shan mountains, progressed over a long period of
+                  time and permitted secondary introgression of genes from other
+                  species into the open-pollinated seeds. Significant exchange with
+                  Malus sylvestris, the crabapple, resulted in current populations of
+                  apples being more related to crabapples than to the more
+                  morphologically similar progenitor Malus sieversii. In strains
+                  without recent admixture the contribution of the latter
+                  predominates.[11][12][13]
+                </p>
+                </div>
+                <div class="col-3 card align-items-center align-self-end p-1" style="width: 14rem; background-color: #ffffff;">
+                  <div class="card" style="width: 13rem; border: 1px solid #c8ccd1;">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Apple_Blossom_%40_Manali.jpg/330px-Apple_Blossom_%40_Manali.jpg" class="card-img-top">
+                </div>
+                  <div class="card-body m-1 p-0">
+                    <p class="card-text m-0 p-0 text-start">Apple blossom</p>
+                  </div>
+                </div>
+              </div>
 
-          <p>
-            The original wild ancestor of Malus domestica was Malus sieversii,
-            found growing wild in the mountains of Central Asia in southern
-            Kazakhstan, Kyrgyzstan, Tajikistan, and northwestern China.[5][10]
-            Cultivation of the species, most likely beginning on the forested
-            flanks of the Tian Shan mountains, progressed over a long period of
-            time and permitted secondary introgression of genes from other
-            species into the open-pollinated seeds. Significant exchange with
-            Malus sylvestris, the crabapple, resulted in current populations of
-            apples being more related to crabapples than to the more
-            morphologically similar progenitor Malus sieversii. In strains
-            without recent admixture the contribution of the latter
-            predominates.[11][12][13]
-          </p>
-          <img
-            id="third-apple"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Apple_Blossom_%40_Manali.jpg/330px-Apple_Blossom_%40_Manali.jpg"
-            alt="third"
-          />
-
-          <h3>Genome</h3>
+          <h5><b>Genome</b></h2>
           <p>
             Apple is diploid (though triploid cultivars are not uncommon), has
             17 chromosomes and an estimated genome size of approximately 650 Mb.
@@ -196,11 +368,11 @@
             has supported this, while also suggesting extensive introgression
             from Malus sylvestris following domestication.[18] History
           </p>
-        </section>
-      </section>
-
-      <section>
-        <h2 id="fourth-heading">History</h2>
+        </div>
+     
+        <h4 id="fourth-heading">History</h4>
+        <div class="row">
+          <div class="col d-flex">
         <p>
           Malus sieversii is recognized as a major progenitor species to the
           cultivated apple, and is morphologically similar. Due to the genetic
@@ -257,9 +429,92 @@
           maintain fruit freshness. They were first used in the United States in
           the 1960s.[28]
         </p>
-      </section>
-    </div>
+      </div>
+        <div class="col-3 card align-items-center d-flex align-self-start p-1" style="width: 14rem; background-color: #ffffff;">
+          <div class="card" style="width: 13rem; border: 1px solid #c8ccd1;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/95apple.jpeg/220px-95apple.jpeg" class="card-img-top">
+        </div>
+          <div class="card-body m-1 p-0">
+            <p class="card-text m-1 p-0">Wild Malus sieversii apple in <a href="#">Kazakhstan</a></p>
+          </div>
+        </div>
+       
+</div>
+        <h4 id="fourth-heading">Significance in European cultures and societies</h4>
+        <i class="p-3" >Main article: Apple (symbolism)</i>
+        <div class="row">
+        <div class="col">
+        
+        <h5><b>Germanic paganism</b></h2>
+          <p>
+            In Norse mythology, the goddess Iðunn is portrayed in the Prose Edda (written in the 13th century by Snorri Sturluson) as providing apples to the gods that give them eternal youthfulness. The English scholar H. R. Ellis Davidson links apples to religious practices in Germanic paganism, from which Norse paganism developed. She points out that buckets of apples were found in the Oseberg ship burial site in Norway, that fruit and nuts (Iðunn having been described as being transformed into a nut in Skáldskaparmál) have been found in the early graves of the Germanic peoples in England and elsewhere on the continent of Europe, which may have had a symbolic meaning, and that nuts are still a recognized symbol of fertility in southwest England.[29]
 
-    <script src="app.js"></script>
+            Davidson notes a connection between apples and the Vanir, a tribe of gods associated with fertility in Norse mythology, citing an instance of eleven "golden apples" being given to woo the beautiful Gerðr by Skírnir, who was acting as messenger for the major Vanir god Freyr in stanzas 19 and 20 of Skírnismál. Davidson also notes a further connection between fertility and apples in Norse mythology in chapter 2 of the Völsunga saga: when the major goddess Frigg sends King Rerir an apple after he prays to Odin for a child, Frigg's messenger (in the guise of a crow) drops the apple in his lap as he sits atop a mound.[30] Rerir's wife's consumption of the apple results in a six-year pregnancy and the birth (by Caesarean section) of their son—the hero Völsung.[31]
+            
+            Further, Davidson points out the "strange" phrase "Apples of Hel" used in an 11th-century poem by the skald Thorbiorn Brúnarson. She states this may imply that the apple was thought of by Brúnarson as the food of the dead. Further, Davidson notes that the potentially Germanic goddess Nehalennia is sometimes depicted with apples and that parallels exist in early Irish stories. Davidson asserts that while cultivation of the apple in Northern Europe extends back to at least the time of the Roman Empire and came to Europe from the Near East, the native varieties of apple trees growing in Northern Europe are small and bitter. Davidson concludes that in the figure of Iðunn "we must have a dim reflection of an old symbol: that of the guardian goddess of the life-giving fruit of the other world."[29]
+          </p>
+        </div>
+      
+        <div class="col-3 card align-items-center d-flex align-self-start p-1" style="width: 10rem; background-color: #ffffff;">
+          <div class="card" style="width: 9rem; border: 1px solid #c8ccd1;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Carl_Larsson_Brita_as_Iduna.jpg/130px-Carl_Larsson_Brita_as_Iduna.jpg" class="card-img-top">
+        </div>
+          <div class="card-body m-1 p-0">
+            <p class="card-text m-1 p-0">Wild Malus sieversii apple in <a href="#">Kazakhstan</a></p>
+          </div>
+        </div>
+        </div>
+
+          <div class="row">
+            <div class="col">
+          <h5><b>Greek mythology</b></h2>
+            <p>
+              Apples appear in many religious traditions, often as a mystical or forbidden fruit. One of the problems identifying apples in religion, mythology and folktales is that the word "apple" was used as a generic term for all (foreign) fruit, other than berries, including nuts, as late as the 17th century.[32] For instance, in Greek mythology, the Greek hero Heracles, as a part of his Twelve Labours, was required to travel to the Garden of the Hesperides and pick the golden apples off the Tree of Life growing at its center.[33][34][35]
+              The Greek goddess of discord, Eris, became disgruntled after she was excluded from the wedding of Peleus and Thetis.[36] In retaliation, she tossed a golden apple inscribed Καλλίστη (Kalliste, sometimes transliterated Kallisti, "For the most beautiful one"), into the wedding party. Three goddesses claimed the apple: Hera, Athena, and Aphrodite. Paris of Troy was appointed to select the recipient. After being bribed by both Hera and Athena, Aphrodite tempted him with the most beautiful woman in the world, Helen of Sparta. He awarded the apple to Aphrodite, thus indirectly causing the Trojan War.[37]
+              The apple was thus considered, in ancient Greece, sacred to Aphrodite. To throw an apple at someone was to symbolically declare one's love; and similarly, to catch it was to symbolically show one's acceptance of that love. An epigram claiming authorship by Plato states:[38]
+              I throw the apple at you, and if you are willing to love me, take it and share your girlhood with me; but if your thoughts are what I pray they are not, even then take it, and consider how short-lived is beauty.
+              — Plato, Epigram VII
+              Atalanta, also of Greek mythology, raced all her suitors in an attempt to avoid marriage. She outran all but Hippomenes (also known as Melanion, a name possibly derived from melon, the Greek word for both "apple" and fruit in general),[34] who defeated her by cunning, not speed. Hippomenes knew that he could not win in a fair race, so he used three golden apples (gifts of Aphrodite, the goddess of love) to distract Atalanta. It took all three apples and all of his speed, but Hippomenes was finally successful, winning the race and Atalanta's hand.[33]
+            </p>
+          </div>
+      
+          <div class="col-3 card align-items-center d-flex align-self-start p-1" style="width: 10rem; background-color: #ffffff;">
+            <div class="card" style="width: 9rem; border: 1px solid #c8ccd1;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Hercules_Musei_Capitolini_MC1265_n2.jpg/130px-Hercules_Musei_Capitolini_MC1265_n2.jpg" class="card-img-top">
+          </div>
+            <div class="card-body m-1 p-0">
+              <p class="card-text m-1 p-0">Wild Malus sieversii apple in <a href="#">Kazakhstan</a></p>
+            </div>
+          </div>
+          </div>
+
+
+<div class="row">
+  <div class="col">
+            <h5><b>Christian art</b></h2>
+              <p>
+                Though the forbidden fruit of Eden in the Book of Genesis is not identified, popular Christian tradition has held that it was an apple that Eve coaxed Adam to share with her.[39] The origin of the popular identification with a fruit unknown in the Middle East in biblical times is found in confusion between the Latin words mālum (an apple) and mălum (an evil), each of which is normally written malum.[40] The tree of the forbidden fruit is called "the tree of the knowledge of good and evil" in Genesis 2:17,[41] and the Latin for "good and evil" is bonum et malum.[42]
+                Renaissance painters may also have been influenced by the story of the golden apples in the Garden of Hesperides. As a result, in the story of Adam and Eve, the apple became a symbol for knowledge, immortality, temptation, the fall of man into sin, and sin itself. The larynx in the human throat has been called the "Adam's apple" because of a notion that it was caused by the forbidden fruit remaining in the throat of Adam.[39] The apple as symbol of sexual seduction has been used to imply human sexuality, possibly in an ironic vein.[39]
+              </p>
+            </div>
+      
+            <div class="col-3 card align-items-center d-flex align-self-start p-1" style="width: 10rem; background-color: #ffffff;">
+              <div class="card" style="width: 9rem; border: 1px solid #c8ccd1;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Albrecht_D%C3%BCrer_-_Adam_and_Eve_%28Prado%29_2.jpg/220px-Albrecht_D%C3%BCrer_-_Adam_and_Eve_%28Prado%29_2.jpg" class="card-img-top">
+            </div>
+              <div class="card-body m-1 p-0">
+                <p class="card-text m-1 p-0">Wild Malus sieversii apple in <a href="#">Kazakhstan</a></p>
+              </div>
+            </div>
+            </div>
+
+            <h5><b>Proverb</b></h2>
+                <p>
+                  The proverb, "An apple a day keeps the doctor away", addressing the supposed health benefits of the fruit, has been traced to 19th-century Wales, where the original phrase was "Eat an apple on going to bed, and you'll keep the doctor from earning his bread".[43] In the 19th century and early 20th, the phrase evolved to "an apple a day, no doctor to pay" and "an apple a day sends the doctor away"; the phrasing now commonly used was first recorded in 1922.[44] Despite the proverb, there is no evidence that eating an apple daily has any significant health effects.[45]
+                </p>
+      </div>
+  </section>
+
+    <script src="../../bootstrap/js/bootstrap.js"></script>
   </body>
 </html>
