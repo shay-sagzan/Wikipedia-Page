@@ -4,17 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wikipedia</title>
-    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css" />
+    <title>Apple Wikipedia</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+  />
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="app.css" />
   </head>
 
   <body>
-    <section class="row d-flex text-black text-left justify-content-between" >
+    <section class="row d-flex text-black text-left justify-content-between" id="big-section" >
        <!-- Side Bar -->
-      <div class="container col-2" id="side-section">  
+      <div class="container" id="side-section">  
         <!-- LOGO -->
-        <div class="d-flex align-items-center justify-content-center" id="p-logo">
+        <div id="p-logo">
             <a
               class="mw-wiki-logo"
               href="https://en.wikipedia.org/wiki/Main_Page"
@@ -36,8 +49,7 @@
               <li><a class="text-decoration-none" href="#">Donate</a></li>
             </ul>
             <ul class="menu-list">
-              <li>Contribute</li>
-              <hr class="m-0 w-75" />
+              <label class="text-secondary">Contribute</label>
               <li><a class="text-decoration-none" href="#">Help</a></li>
               <li><a class="text-decoration-none" href="#">Learn to edit</a></li>
               <li><a class="text-decoration-none" href="#">Community portal</a></li>
@@ -46,8 +58,7 @@
               </a></li>
             </ul>
             <ul class="menu-list">
-              <li>Tools</li>
-              <hr class="m-0 w-75" />
+              <label class="text-secondary">Tools</label>
              <li><a class="text-decoration-none" href="#">What links here</a></li>
               <li><a class="text-decoration-none" href="#">Related changes</a></li>
               <li><a class="text-decoration-none" href="#">Special pages</a></li>
@@ -57,23 +68,19 @@
               <li><a class="text-decoration-none" href="#">Wikidata item</a></li>
             </ul>
             <ul class="menu-list">
-              <li>Print/export
-              </li>
-              <hr class="m-0 w-75" />
+              <label class="text-secondary">Print/export</label>
               <li class=""><a href="">contents</a></li>
               <li><a class="text-decoration-none" href="#">Download as PDF</a></li>
               <li><a class="text-decoration-none" href="#">Printable version</a></li>
                      </ul>
             <ul class="menu-list">
-              <li>In other projects</a></li>
-              <hr class="m-0 w-75" />
+              <label class="text-secondary">In other projects</a></label>
               <li><a class="text-decoration-none" href="#">Wikimedia Commons</a></li>
               <li><a class="text-decoration-none" href="#">Wikibooks</a></li>
               <li><a class="text-decoration-none" href="#">Wikiquote</a></li>
             </ul>
             <ul class="menu-list">
-              <li>Languages</a></li>
-              <hr class="m-0 w-75" />
+              <label class="text-secondary">Languages</label>
               <li><a class="text-decoration-none" href="#">አማርኛ</a></li>
               <li><a class="text-decoration-none" href="#">العربية</a></li>
               <li><a class="text-decoration-none" href="#">עברית</a></li>
@@ -83,26 +90,85 @@
               <li><a class="text-decoration-none" href="#">Română</a></li>
               <li><a class="text-decoration-none" href="#">Русский</a></li>
               <li><a class="text-decoration-none" href="#">ייִדיש</a></li>
-              <button class="btn btn-item text-dark border p-1 mb-0 fw-lighter">
+              <button class="btn btn-item text-dark border p-0 m-0 fw-lighter" style="width: 100px; height: 35px;">
                 <img
                   src="https://en.wikipedia.org/w/extensions/UniversalLanguageSelector/resources/images/language-base20.svg?b7954"
                 />
                 168 more
               </button>
             </ul>
-            <sub class="d-flex justify-content-end"><a class="text-decoration-none" href="#" style="list-style: none;"> Edit links </a></span>
+            <sub class="d-flex justify-content-end m-0 p-0"><a class="text-decoration-none" href="#" style="list-style: none; color: grey;"> Edit links </a></span>
           </aside>
       </div>
 
     <!-- Main -->
-      <div class="container col-10 text-dark" style="border: 1px solid #a7d7f9; height:auto;">
+      <div class="container col-10 text-dark" id="main-table">
 
     <!-- Head navbar -->
-    <!--  -->
+      
+        <div class="contatiner" id="top-page">
+        <div class="row" >
+          <ul class="nav nab-tabs justify-content-end" id="head-nav">
+            <li class="nav-item">
+            <a class="nav-link disabled text-secondary"><i class="bi bi-person-fill"></i> Not logged in</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Talk</a>
+           </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contributions</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">Create account</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">Log in</a>
+            </li>
+          </ul>
+          <div class="row d-flex flex-row input-group" id="row-search">
+          
+            <div class="col d-flex">
+              <ul class="nav nav-tabs border-0" id="list-left" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Article</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="special2" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Talk</button>
+                </li>
+              </ul>
+           
+              <div class="col d-flex justify-content-end input-group">
+              <div class="d-flex flex-row bd-highlight">
+                <ul class="nav nav-tabs border-0" id="list-right" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Read</button>
+                  </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#">View source</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#" id="special2">View History</a>
+                </li>
+                <div class="input-group flex-nowrap" id="search">
+
+                  <input type="text" class="form-control border-end-0" placeholder="Search Wikipedia">
+                  <span class="input-group-text border-start-0" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                </div>
+                </ul>
+              </div>
+            </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+        
 
 
+      <div class="container m-0 p-3" id="div-container">    
 
-        <h1 id="first-heading">Apple</h1>
+        <h1 id="first-heading" style="font-size: 28px;">Apple <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Semi-protection-shackle.svg/64px-Semi-protection-shackle.svg.png">
+           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Symbol_support_vote.svg/19px-Symbol_support_vote.svg.png">
+        </h1>
        <div class="row">
          <div class="col-8">
         <p>From Wikipedia, the free encyclopedia </p>
@@ -119,7 +185,7 @@
           have religious and mythological significance in many cultures,
           including Norse, Greek, and European Christian tradition.</p>
           
-          <p> grown
+          <p>Apples grown
           from seed tend to be very different from those of their parents, and
           the resultant fruit frequently lacks desired characteristics.
           Generally, apple cultivars are propagated by clonal grafting onto
@@ -141,9 +207,9 @@
         </p>
         <div class="contents mb-3" style="width: fit-content;">
           <h6 class="h3-contents m-0">
-            Contents [<a style="color: #0645ad" href="#">hide</a>]
+            Contents [<a href="#">hide</a>]
           </h6>
-          <ol class="m-0 p-2" id="special-list" style="color: #0645AD">
+          <ol class="m-0 p-2" id="special-list">
             <li>Etymology</li>
             <li>Description
               <ol>
@@ -191,51 +257,52 @@
         </div>
       </div>
       
-        <div class="col-2" style="padding-top: 100px;">
-        <div class="d-flex m-0 p-0 d-flex card align-items-center p-1" style="display: none; width: 16rem; background-color: #ffffff;">
+        <div class="col-2" style="padding-top: 100px;" id="table">
+        <div class="d-flex m-0 p-0 d-flex card align-items-center p-1" style="width: 16rem;">
           <div class="card border-0" style="width: 15rem">
             <p style="background-color: rgb(180,250,180); text-align: center;"><b>Apple</b></p>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pink_lady_and_cross_section.jpg/330px-Pink_lady_and_cross_section.jpg" class="card-img-top">
        
         <p style="text-align: center; display: block;"><a href="#">'Cripps Pink'</a> apples</p>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Malus_domestica_a1.jpg/220px-Malus_domestica_a1.jpg" class="card-img-top">
-          <p style="background-color: rgb(180,250,180); text-align: center;"><a href="#"><b>Scientific classification</b></a></p>
-          <p style="text-align: center; display: block;">Flowers</p>
+        <p class="p-0 m-0" style="text-align: center; display: block;">Flowers</p>  
+        <p style="background-color: rgb(180,250,180); text-align: center;"><a href="#"><b>Scientific classification</b></a></p>
+          
         <table>
           <tr>
             <td>Kingdom:</td>
-            <td>	Plantae</td>
+            <td>	<a href="#"> Plantae</a></td>
           </tr>
           <tr>
             <td>Clade:</td>
-            <td>	Tracheophytes</td>
+            <td>	<a href="#"> Tracheophytes</a></td>
           </tr>
           <tr>
             <td>Clade:</td>
-            <td>	Angiosperms</td>
+            <td>	<a href="#"> Angiosperms</a></td>
           </tr>
           <tr>
             <td>Clade:</td>
-            <td>Eudicots</td>
+            <td><a href="#"> Eudicots</a></td>
           </tr>
           <tr>
             <td>Clade:</td>
-            <td>	Rosids</td>
+            <td>	<a href="#"> Rosids</a></td>
           </tr>
           <tr>
             <td>Order:</td>
-            <td>	Rosales</td>
+            <td>	<a href="#"> Rosales</a></td>
           </tr>
           <tr>
             <td>Family:</td>
-            <td>	Rosaceae</td>
+            <td>	<a href="#"> Rosaceae</a></td>
           <tr>
             <td>Genus:</td>
-            <td>		Malus</td>
+            <td>		<a href="#"> Malus</a></td>
           </tr>
           <tr>
             <td>Species:</td>
-            <td>		<b>M. domestica</b></td>
+            <td>		<a href="#"> <b>M. domestica</b></a></td>
           </tr>
         </table>
         <p class="m-0" style="background-color: rgb(180,250,180); text-align: center;"><a href="#"><b>Binomial name</b></a></p>
@@ -489,8 +556,8 @@
           </div>
 
 
-<div class="row">
-  <div class="col">
+          <div class="row">
+          <div class="col">
             <h5><b>Christian art</b></h2>
               <p>
                 Though the forbidden fruit of Eden in the Book of Genesis is not identified, popular Christian tradition has held that it was an apple that Eve coaxed Adam to share with her.[39] The origin of the popular identification with a fruit unknown in the Middle East in biblical times is found in confusion between the Latin words mālum (an apple) and mălum (an evil), each of which is normally written malum.[40] The tree of the forbidden fruit is called "the tree of the knowledge of good and evil" in Genesis 2:17,[41] and the Latin for "good and evil" is bonum et malum.[42]
@@ -513,8 +580,13 @@
                   The proverb, "An apple a day keeps the doctor away", addressing the supposed health benefits of the fruit, has been traced to 19th-century Wales, where the original phrase was "Eat an apple on going to bed, and you'll keep the doctor from earning his bread".[43] In the 19th century and early 20th, the phrase evolved to "an apple a day, no doctor to pay" and "an apple a day sends the doctor away"; the phrasing now commonly used was first recorded in 1922.[44] Despite the proverb, there is no evidence that eating an apple daily has any significant health effects.[45]
                 </p>
       </div>
+      </div>
   </section>
 
-    <script src="../../bootstrap/js/bootstrap.js"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+  crossorigin="anonymous"
+></script>
   </body>
 </html>
